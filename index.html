@@ -1,0 +1,103 @@
+<!DOCTYPE>
+<html>
+	<head>
+	<link rel="icon" href="https://static-00.iconduck.com/assets.00/cat-face-with-wry-smile-emoji-512x512-hoznvnkw.png" type="image/jpg">
+	<meta charset="UTF-8">
+  <meta name="description" content="Bad Cat oh no naughty">
+  <meta name="keywords" content="Cat, emoji, show, obscene">
+  <meta name="author" content="Purewack">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+	</head>
+
+	<body>
+	
+	<div class="scene">
+    <img src="https://i.pinimg.com/originals/b0/e5/9d/b0e59d93768cb435e86fa15c226f5db2.png" alt="" class="curtain-l">
+    <img src="https://i.pinimg.com/originals/b0/e5/9d/b0e59d93768cb435e86fa15c226f5db2.png" alt="" class="curtain-r">
+  
+         <img class="hero" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Happy_cat_emoji_icon_87ab6b39-5f08-48a5-a89a-1f5d3312e159_large.png?v=1571606090"/>
+    <img src="http://cdn.shopify.com/s/files/1/1061/1924/products/Middle_Finger_Emoji_Icon_ios10_grande.png?v=1571606091" alt="" class="fu">
+    
+
+  </div>
+
+	<style>
+    body{
+      height:100vh;
+      margin:0;
+      background:#312;
+    }
+
+    .scene{
+      height:100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      position:relative;
+      transform-style:preserve-3d;
+  
+      animation:shake 3s 5s infinite;
+      
+    }
+
+    .hero{
+      height:50vw;
+      animation:zoom 3s 1s both;
+      
+    }
+    .fu{
+      position:absolute;
+      right:15vw;
+      width:20vw;
+  
+      animation:flippinheck 3s 3s both;
+     
+    }
+    .curtain-l{
+      position:absolute;
+      left:0;
+      margin:0;
+      width:55vw;
+      height:100vh;
+  
+      animation:reveal-l 5s forwards;
+      
+    }
+    .curtain-r{
+      position:absolute;
+      right:0;
+      margin:0;
+      width:55vw;
+      height:100vh;
+      transform:rotateY(180deg);
+  
+       animation:reveal-r 5s forwards;
+      
+    }
+    @keyframes shake{
+      from{transform:rotateZ(0deg)}
+      40%{transform:rotateZ(-10deg)}
+      70%{transform:rotateZ(10deg)}
+      to{transform:rotateZ(0deg)}
+    }
+    @keyframes zoom{
+      from{transform:scale(0)}
+      to{transform:scale(1)}
+    }
+    @keyframes flippinheck{
+        from{transform:translate3d(50vw,0,20vh) rotateZ(90deg )rotateX(90deg)}
+        to{transform:translate3d(0,0,1px)}
+      }
+    @keyframes reveal-l{
+      99%{transform:translateX(-100%)}
+      to{opacity:0}
+    }
+    @keyframes reveal-r{
+        from{transform:rotateY(180deg);}
+        99%{transform:translateX(100%) rotateY(180deg);}
+        to{opacity:0;}
+      }
+	</style>
+	</body>
+</html>
