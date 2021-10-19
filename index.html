@@ -102,14 +102,20 @@
       to{transform:scale(1)}
     }
     @keyframes reveal-l{
-      99%{transform:translateX(-100%)}
+      99%{transform:translateX(-100%) skew(10deg)}
       to{opacity:0}
     }
     @keyframes reveal-r{
         from{transform:rotateY(180deg);}
-        99%{transform:translateX(100%) rotateY(180deg);}
+        99%{transform:translateX(100%) skew(-10deg) rotateY(180deg);}
         to{opacity:0;}
       }
 	</style>
+
+  <script>
+    window.addEventListener('touchstart', (e)=>{
+      if(e.touches.length > 1) e.preventDefault()
+    },false)
+  </script>
 	</body>
 </html>
